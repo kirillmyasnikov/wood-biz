@@ -7,39 +7,43 @@
 (function () {
   "use strict";
 
-  /* ---------------- Translations ---------------- */
+  /* ---------------- Translations ----------------
+     Business-style translations for all four languages.
+     Key message: independent agents building trust between
+     timber suppliers and buyers worldwide. Customs clearance
+     is explicitly NOT part of the services. */
   const I18N = {
     ru: {
-      "meta.title": "Wood-Biz — Ваш надежный партнер в сфере древесины",
+      "meta.title": "Wood-Biz — Мост доверия между поставщиками и покупателями древесины",
       "meta.description":
-        "Wood-Biz: агентирование поставок древесины и лесоматериалов, инспекция качества, полное документальное сопровождение сделок. Работаем с Российской Федерацией по всему миру.",
-      "og.title": "Wood-Biz — Ваш надежный партнер в сфере древесины",
+        "Wood-Biz: независимые агенты между поставщиками и покупателями лесоматериалов по всему миру. Агентирование сделок, инспектирование качества, документальное сопровождение (без таможенного оформления).",
+      "og.title": "Wood-Biz — Мост доверия между поставщиками и покупателями древесины",
       "og.description":
-        "Поставки древесины, инспекция качества и документальное сопровождение сделок. Работаем с РФ по всему миру.",
+        "Агентирование сделок, инспекция качества и документальное сопровождение. Поставщики и покупатели лесоматериалов по всему миру.",
 
-      "hero.eyebrow": "Поставки древесины · Инспекция · Документация",
-      "hero.title": "Wood-Biz — Ваш надежный партнер в сфере древесины",
-      "hero.subtitle": "Работаем с Российской Федерацией по всему миру",
+      "hero.eyebrow": "Агентирование · Инспекция · Документация",
+      "hero.title": "Wood-Biz — Мост доверия между поставщиками и покупателями древесины",
+      "hero.subtitle":
+        "Мы выступаем независимыми агентами, создающими основу для доверительных отношений между поставщиками и покупателями лесоматериалов по всему миру.",
       "cta.button": "Оставить заявку",
 
       "services.title": "Наши услуги",
-      "services.s1.title": "Агентирование поставок древесины и лесоматериалов",
-      "services.s1.desc": "Подбор поставщиков, переговоры и организация поставок по всему миру.",
-      "services.s2.title": "Инспектирование качества продукции",
-      "services.s2.desc": "Проверка древесины на всех этапах: влажность, сортировка, соответствие стандартам.",
-      "services.s3.title": "Полное документальное сопровождение сделок",
-      "services.s3.desc": "Договоры, экспортная документация, сертификаты и таможенное оформление.",
-      "services.s4.title": "Работаем с Российской Федерацией по всему миру",
-      "services.s4.desc": "Международная логистика и коммуникация без границ и языковых барьеров.",
+      "services.s1.title": "Агентирование сделок",
+      "services.s1.desc": "Обеспечиваем прозрачность и безопасность взаимодействия между сторонами.",
+      "services.s2.title": "Инспектирование качества",
+      "services.s2.desc": "Проверяем продукцию на соответствие заявленным стандартам.",
+      "services.s3.title": "Документальное сопровождение",
+      "services.s3.desc": "Готовим полный пакет документов для сделки (без таможенного оформления).",
 
       "contact.title": "Оставить заявку",
       "contact.subtitle": "Заполните форму — мы свяжемся с вами в течение 24 часов.",
+      "contact.phone_label": "Или позвоните нам:",
       "form.name.label": "Имя",
       "form.name.placeholder": "Ваше имя",
       "form.email.label": "Email",
       "form.email.placeholder": "you@example.com",
       "form.phone.label": "Телефон",
-      "form.phone.placeholder": "+7 900 000-00-00",
+      "form.phone.placeholder": "+7 999 040-22-46",
       "form.message.label": "Сообщение",
       "form.message.placeholder": "Кратко опишите ваш запрос",
       "form.submit": "Оставить заявку",
@@ -49,35 +53,35 @@
       "error.email": "Укажите корректный email",
       "error.phone": "Укажите корректный номер телефона",
 
-      "footer.address": "Российская Федерация · Доставка по всему миру",
+      "footer.tagline": "Поставщики и покупатели лесоматериалов по всему миру",
       "footer.rights": "Все права защищены."
     },
 
     en: {
-      "meta.title": "Wood-Biz — Your Reliable Partner in the Timber Industry",
+      "meta.title": "Wood-Biz — A Bridge of Trust Between Timber Suppliers and Buyers",
       "meta.description":
-        "Wood-Biz: agenting timber and lumber supplies, quality inspection, full documentation support for your deals. Working with the Russian Federation worldwide.",
-      "og.title": "Wood-Biz — Your Reliable Partner in the Timber Industry",
+        "Wood-Biz: independent agents building trust between timber and lumber suppliers and buyers worldwide. Deal agency, quality inspection and documentation support (customs clearance not included).",
+      "og.title": "Wood-Biz — A Bridge of Trust Between Timber Suppliers and Buyers",
       "og.description":
-        "Timber supply agency, quality inspection and full deal documentation. Working with the RF worldwide.",
+        "Deal agency, quality inspection and documentation support. Connecting timber suppliers and buyers worldwide.",
 
-      "hero.eyebrow": "Timber Supply · Inspection · Documentation",
-      "hero.title": "Wood-Biz — Your Reliable Partner in the Timber Industry",
-      "hero.subtitle": "Working with the Russian Federation worldwide",
+      "hero.eyebrow": "Deal Agency · Inspection · Documentation",
+      "hero.title": "Wood-Biz — A Bridge of Trust Between Timber Suppliers and Buyers",
+      "hero.subtitle":
+        "We act as independent agents, creating the foundation for trusting relationships between lumber suppliers and buyers around the world.",
       "cta.button": "Submit Request",
 
       "services.title": "Our Services",
-      "services.s1.title": "Agenting Timber & Lumber Supplies",
-      "services.s1.desc": "Supplier sourcing, negotiations and worldwide shipment organization.",
-      "services.s2.title": "Product Quality Inspection",
-      "services.s2.desc": "Timber checks at every stage: moisture, grading and standards compliance.",
-      "services.s3.title": "Full Deal Documentation Support",
-      "services.s3.desc": "Contracts, export paperwork, certificates and customs clearance.",
-      "services.s4.title": "Working with the Russian Federation Worldwide",
-      "services.s4.desc": "International logistics and communication without borders or language barriers.",
+      "services.s1.title": "Deal Agency",
+      "services.s1.desc": "We ensure transparency and security of interaction between the parties.",
+      "services.s2.title": "Quality Inspection",
+      "services.s2.desc": "We verify that products meet the declared standards.",
+      "services.s3.title": "Documentation Support",
+      "services.s3.desc": "We prepare the complete document package for the deal (customs clearance not included).",
 
       "contact.title": "Submit Request",
       "contact.subtitle": "Fill in the form — we will contact you within 24 hours.",
+      "contact.phone_label": "Or call us:",
       "form.name.label": "Name",
       "form.name.placeholder": "Your name",
       "form.email.label": "Email",
@@ -93,35 +97,35 @@
       "error.email": "Please enter a valid email address",
       "error.phone": "Please enter a valid phone number",
 
-      "footer.address": "Russian Federation · Shipping worldwide",
+      "footer.tagline": "Connecting lumber suppliers and buyers worldwide",
       "footer.rights": "All rights reserved."
     },
 
     ko: {
-      "meta.title": "Wood-Biz — 목재 산업의 신뢰할 수 있는 파트너",
+      "meta.title": "Wood-Biz — 목재 공급업체와 구매자 사이의 신뢰의 다리",
       "meta.description":
-        "Wood-Biz: 목재 및 임산물 공급 에이전시, 품질 검사, 거래 문서 전체 지원. 러시아 연방과 전 세계적으로 업무 수행.",
-      "og.title": "Wood-Biz — 목재 산업의 신뢰할 수 있는 파트너",
+        "Wood-Biz: 전 세계 목재 공급업체와 구매자 간의 신뢰를 구축하는 독립 에이전시. 거래 에이전시, 품질 검사, 문서 지원 (통관 업무는 포함되지 않음).",
+      "og.title": "Wood-Biz — 목재 공급업체와 구매자 사이의 신뢰의 다리",
       "og.description":
-        "목재 공급 에이전시, 품질 검사, 거래 문서 지원. 러시아 연방 기반 글로벌 업무.",
+        "거래 에이전시, 품질 검사, 문서 지원. 전 세계 목재 공급업체와 구매자를 연결합니다.",
 
-      "hero.eyebrow": "목재 공급 · 검사 · 문서 지원",
-      "hero.title": "Wood-Biz — 목재 산업의 신뢰할 수 있는 파트너",
-      "hero.subtitle": "러시아 연방과 전 세계적으로 업무합니다",
+      "hero.eyebrow": "거래 에이전시 · 품질 검사 · 문서 지원",
+      "hero.title": "Wood-Biz — 목재 공급업체와 구매자 사이의 신뢰의 다리",
+      "hero.subtitle":
+        "저희는 전 세계 임산물 공급업체와 구매자 간의 신뢰 관계 구축을 지원하는 독립 에이전시입니다.",
       "cta.button": "문의하기",
 
       "services.title": "서비스 소개",
-      "services.s1.title": "목재 및 임산물 공급 에이전시",
-      "services.s1.desc": "공급업체 선정, 협상 및 전 세계 물류 조직화.",
-      "services.s2.title": "제품 품질 검사",
-      "services.s2.desc": "수분 함량, 등급 분류, 규격 준수 등 모든 단계의 목재 검사.",
-      "services.s3.title": "거래 문서 전면 지원",
-      "services.s3.desc": "계약서, 수출 서류, 인증서 및 통관 절차 지원.",
-      "services.s4.title": "러시아 연방과 전 세계적 협력",
-      "services.s4.desc": "국경과 언어 장벽 없는 국제 물류 및 커뮤니케이션.",
+      "services.s1.title": "거래 에이전시",
+      "services.s1.desc": "당사자 간 거래의 투명성과 안전성을 보장합니다.",
+      "services.s2.title": "품질 검사",
+      "services.s2.desc": "제품이 명시된 기준에 부합하는지 검증합니다.",
+      "services.s3.title": "문서 지원",
+      "services.s3.desc": "거래에 필요한 전체 문서 패키지를 준비합니다 (통관 업무는 제외).",
 
       "contact.title": "문의하기",
       "contact.subtitle": "양식을 작성해 주시면 24시간 이내에 연락드리겠습니다.",
+      "contact.phone_label": "전화 문의:",
       "form.name.label": "이름",
       "form.name.placeholder": "성함",
       "form.email.label": "이메일",
@@ -137,35 +141,35 @@
       "error.email": "올바른 이메일 주소를 입력해 주세요",
       "error.phone": "올바른 전화번호를 입력해 주세요",
 
-      "footer.address": "러시아 연방 · 전 세계 배송",
+      "footer.tagline": "전 세계 임산물 공급업체와 구매자를 연결합니다",
       "footer.rights": "모든 권리 보유."
     },
 
     zh: {
-      "meta.title": "Wood-Biz — 您可靠的木材合作伙伴",
+      "meta.title": "Wood-Biz — 木材供应商与采购商之间的信任之桥",
       "meta.description":
-        "Wood-Biz：木材和原木供应代理、产品质量检验、交易全程文件支持。与俄罗斯联邦合作，面向全球业务。",
-      "og.title": "Wood-Biz — 您可靠的木材合作伙伴",
+        "Wood-Biz：独立代理，连接全球木材供应商与采购商。交易代理、质量检验、文件支持（不含海关报关）。",
+      "og.title": "Wood-Biz — 木材供应商与采购商之间的信任之桥",
       "og.description":
-        "木材供应代理、质量检验和交易文件支持。立足俄罗斯，服务全球。",
+        "交易代理、质量检验和文件支持。连接全球木材供应商与采购商。",
 
-      "hero.eyebrow": "木材供应 · 质量检验 · 文件支持",
-      "hero.title": "Wood-Biz — 您可靠的木材合作伙伴",
-      "hero.subtitle": "与俄罗斯联邦合作，业务遍及全球",
+      "hero.eyebrow": "交易代理 · 质量检验 · 文件支持",
+      "hero.title": "Wood-Biz — 木材供应商与采购商之间的信任之桥",
+      "hero.subtitle":
+        "我们作为独立代理，为全球木材供应商与采购商建立互信合作的基础。",
       "cta.button": "提交申请",
 
       "services.title": "我们的服务",
-      "services.s1.title": "木材及原木供应代理",
-      "services.s1.desc": "供应商筛选、商务谈判及全球物流运输组织。",
-      "services.s2.title": "产品质量检验",
-      "services.s2.desc": "各环节木材检测：含水率、分级及标准符合性。",
-      "services.s3.title": "交易全程文件支持",
-      "services.s3.desc": "合同、出口单证、证书及报关手续办理。",
-      "services.s4.title": "与俄罗斯联邦合作，面向全球",
-      "services.s4.desc": "无国界、无语言障碍的国际物流与沟通。",
+      "services.s1.title": "交易代理",
+      "services.s1.desc": "确保各方合作的透明度与安全性。",
+      "services.s2.title": "质量检验",
+      "services.s2.desc": "核验产品是否符合申报标准。",
+      "services.s3.title": "文件支持",
+      "services.s3.desc": "准备交易所需的完整文件包（不含海关报关）。",
 
       "contact.title": "提交申请",
       "contact.subtitle": "请填写表格 — 我们将在24小时内与您联系。",
+      "contact.phone_label": "或直接致电：",
       "form.name.label": "姓名",
       "form.name.placeholder": "您的姓名",
       "form.email.label": "电子邮箱",
@@ -181,7 +185,7 @@
       "error.email": "请输入有效的电子邮箱地址",
       "error.phone": "请输入有效的电话号码",
 
-      "footer.address": "俄罗斯联邦 · 全球发货",
+      "footer.tagline": "连接全球木材供应商与采购商",
       "footer.rights": "版权所有。"
     }
   };
@@ -190,11 +194,11 @@
   const STORAGE_KEY = "woodbiz.lang";
 
   /* ---------------- Helpers ---------------- */
+  let currentLang = "ru";
+
   function t(key) {
     return (I18N[currentLang] && I18N[currentLang][key]) || I18N.ru[key] || key;
   }
-
-  let currentLang = "ru";
 
   function applyLanguage(lang) {
     if (!I18N[lang]) lang = "ru";

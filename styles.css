@@ -172,7 +172,7 @@ a { color: var(--color-accent); }
 }
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 24px;
 }
 .service-card {
@@ -218,6 +218,23 @@ a { color: var(--color-accent); }
   font-size: 1.05rem;
   max-width: 420px;
 }
+.contact-phone-label {
+  margin-top: 28px !important;
+  font-size: .92rem !important;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+}
+.contact-phone {
+  display: inline-block;
+  font-size: clamp(1.4rem, 3vw, 1.9rem);
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 2px solid rgba(255, 255, 255, .35);
+  padding-bottom: 2px;
+  transition: border-color .2s ease;
+}
+.contact-phone:hover { border-bottom-color: #fff; }
 
 .request-form {
   background: #fff;
