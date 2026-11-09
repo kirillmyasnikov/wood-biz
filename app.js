@@ -35,7 +35,7 @@
       "services.s2.desc": "Проверяем продукцию на соответствие заявленным стандартам.",
       "services.s3.title": "Документальное сопровождение",
       "services.s3.desc":
-        "Документы готовит поставщик — мы проверяем их наличие и консультируем, какие документы необходимы для сделки (таможенное оформление не входит в услуги).",
+        "Сопровождаем сделку документально: формируем требования к пакету документов, проверяем его комплектность и соответствие условиям контракта, снимаем разночтения между поставщиком и покупателем. Документы готовит поставщик; таможенное оформление не входит в услуги.",
       "services.s4.title": "Услуги по логистике",
       "services.s4.desc":
         "Организуем перевозку пиломатериалов от поставщика до покупателя: подбираем маршрут, контролируем сроки и сопровождаем груз в пути.",
@@ -74,7 +74,7 @@
       "services.s2.desc": "We verify that products meet the declared standards.",
       "services.s3.title": "Documentation Support",
       "services.s3.desc":
-        "The supplier prepares the documents — we verify that they are in place and advise which documents the deal requires (customs clearance is not part of our services).",
+        "We provide documentary support for the deal: we define the requirements for the document package, verify its completeness and compliance with the contract terms, and resolve discrepancies between supplier and buyer. Documents are prepared by the supplier; customs clearance is not included.",
       "services.s4.title": "Logistics Services",
       "services.s4.desc":
         "We arrange transport of sawn timber from supplier to buyer: route planning, schedule control and cargo support along the way.",
@@ -113,7 +113,7 @@
       "services.s2.desc": "제품이 명시된 기준에 부합하는지 검증합니다.",
       "services.s3.title": "문서 지원",
       "services.s3.desc":
-        "서류는 공급업체가 준비하며, 저희는 서류 구비 여부를 확인하고 거래에 필요한 서류를 안내합니다 (통관 업무는 제외).",
+        "거래의 서류 업무를 지원합니다. 문서 패키지 요건을 정하고, 구성의 완전성과 계약 조건 부합 여부를 확인하며, 공급업체와 구매자 간의 이견을 조율합니다. 서류는 공급업체가 준비하며, 통관 업무는 포함되지 않습니다.",
       "services.s4.title": "물류 서비스",
       "services.s4.desc":
         "공급업체에서 구매자까지 제재목 운송을 조직합니다. 경로 선정, 일정 관리, 운송 중 화물 동행을 지원합니다.",
@@ -152,7 +152,7 @@
       "services.s2.desc": "核验产品是否符合申报标准。",
       "services.s3.title": "文件支持",
       "services.s3.desc":
-        "文件由供应商准备 — 我们核查文件是否齐全，并就交易所需文件提供咨询（不含海关报关）。",
+        "为交易提供文件支持：制定文件包要求，核查其完整性与是否符合合同条款，并协调供应商与采购商之间的分歧。文件由供应商准备，不含海关报关。",
       "services.s4.title": "物流服务",
       "services.s4.desc":
         "组织从供应商到采购商的锯材运输：规划路线、管控时效并全程跟单。",
