@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title data-i18n="meta.title">Wood-Biz — Мост доверия между поставщиками и покупателями древесины</title>
   <meta name="description" content="" data-i18n-meta="meta.description">
-  <meta name="keywords" content="древесина, лесоматериалы, timber, wood, lumber, 木材, 목재, поставки, инспекция, agent">
+  <meta name="keywords" content="древесина, пиломатериалы, продукция из древесины, лесоматериалы, логистика, timber, lumber, sawn timber, logistics, 木材, 목재, поставки, инспекция, agent">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://wood-biz.com/">
 
@@ -31,7 +31,7 @@
     "@type": "Organization",
     "name": "Wood-Biz",
     "url": "https://wood-biz.com/",
-    "description": "Independent agents building trust between timber suppliers and buyers worldwide: deal agency, quality inspection, documentation support (customs clearance not included).",
+    "description": "Independent agents building trust between suppliers and buyers of sawn timber and wood products worldwide: deal agency, quality inspection, documentation verification, logistics (customs clearance not included).",
     "telephone": "+79990402246",
     "contactPoint": {
       "@type": "ContactPoint",
@@ -70,18 +70,18 @@
     <!-- ============ HERO: headline + mission + CTA ============ -->
     <section class="hero" id="hero">
       <div class="container">
-        <p class="hero-eyebrow" data-i18n="hero.eyebrow">Агентирование · Инспекция · Документация</p>
+        <p class="hero-eyebrow" data-i18n="hero.eyebrow">Агентирование · Инспекция · Документация · Логистика</p>
         <h1 class="hero-title" data-i18n="hero.title">Wood-Biz — Мост доверия между поставщиками и покупателями древесины</h1>
-        <p class="hero-subtitle" data-i18n="hero.subtitle">Мы выступаем независимыми агентами, создающими основу для доверительных отношений между поставщиками и покупателями лесоматериалов по всему миру.</p>
+        <p class="hero-subtitle" data-i18n="hero.subtitle">Мы выступаем независимыми агентами, создающими основу для доверительных отношений между поставщиками и покупателями пиломатериалов и продукции из древесины по всему миру.</p>
         <a href="#contact" class="btn btn-primary" data-i18n="cta.button">Оставить заявку</a>
       </div>
     </section>
 
-    <!-- ============ SERVICES: three blocks ============ -->
+    <!-- ============ SERVICES: four blocks ============ -->
     <section class="services" id="services">
       <div class="container">
         <h2 class="section-title" data-i18n="services.title">Наши услуги</h2>
-        <div class="services-grid services-grid-3">
+        <div class="services-grid">
 
           <article class="service-card">
             <div class="service-icon" aria-hidden="true">
@@ -104,14 +104,22 @@
               <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M8 13h8M8 17h5"/></svg>
             </div>
             <h3 data-i18n="services.s3.title">Документальное сопровождение</h3>
-            <p data-i18n="services.s3.desc">Готовим полный пакет документов для сделки (без таможенного оформления).</p>
+            <p data-i18n="services.s3.desc">Документы готовит поставщик — мы проверяем их наличие и консультируем, какие документы необходимы для сделки (таможенное оформление не входит в услуги).</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M1 3h15v13H1z"/><path d="M16 8h4l3 3v5h-7z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+            </div>
+            <h3 data-i18n="services.s4.title">Услуги по логистике</h3>
+            <p data-i18n="services.s4.desc">Организуем перевозку пиломатериалов от поставщика до покупателя: подбираем маршрут, контролируем сроки и сопровождаем груз в пути.</p>
           </article>
 
         </div>
       </div>
     </section>
 
-    <!-- ============ CONTACT: phone + request form ============ -->
+    <!-- ============ CONTACT: phone + Zoho Forms embed ============ -->
     <section class="contact" id="contact">
       <div class="container contact-inner">
         <div class="contact-intro">
@@ -121,35 +129,35 @@
           <a class="contact-phone" href="tel:+79990402246">+7 999 040 22 46</a>
         </div>
 
-        <form id="request-form" class="request-form" novalidate>
-          <div class="form-group">
-            <label for="f-name" data-i18n="form.name.label">Имя</label>
-            <input type="text" id="f-name" name="name" autocomplete="name" required data-i18n-placeholder="form.name.placeholder" placeholder="Ваше имя">
-            <small class="error-msg" data-error-for="name"></small>
+        <div class="request-form form-embed" id="form-embed">
+          <!--
+            ============ ZOHO FORMS ============
+            Замените значение src ниже на ссылку из Zoho Forms:
+              Forms → выберите форму → Share → Embed → iFrame Source Code
+            Ссылка выглядит так:
+              https://forms.zohopublic.eu/<account>/form/<FormName>/formperma/<token>
+            Пока src содержит PASTE_ZOHO_FORM_URL, iframe скрыт, а посетитель
+            видит кнопку «написать на email» — ложного «отправлено» нет.
+          -->
+          <iframe
+            id="zoho-form"
+            class="zoho-form-frame"
+            title="Форма заявки Wood-Biz"
+            src="PASTE_ZOHO_FORM_URL"
+            loading="lazy"
+            referrerpolicy="strict-origin-when-cross-origin"></iframe>
+
+          <div class="form-pending" id="form-pending" hidden>
+            <p class="form-pending-title" data-i18n="form.pending.title">Оставьте заявку по почте</p>
+            <a class="btn btn-accent" href="mailto:info@wood-biz.com?subject=%D0%97%D0%B0%D1%8F%D0%B2%D0%BA%D0%B0%20%D1%81%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0%20wood-biz.com">info@wood-biz.com</a>
+            <p class="form-fallback" data-i18n="form.fallback">Если форма не отображается, напишите нам на info@wood-biz.com или позвоните по телефону выше — мы ответим в течение 24 часов.</p>
           </div>
 
-          <div class="form-group">
-            <label for="f-email" data-i18n="form.email.label">Email</label>
-            <input type="email" id="f-email" name="email" autocomplete="email" required data-i18n-placeholder="form.email.placeholder" placeholder="you@example.com">
-            <small class="error-msg" data-error-for="email"></small>
-          </div>
-
-          <div class="form-group">
-            <label for="f-phone" data-i18n="form.phone.label">Телефон</label>
-            <input type="tel" id="f-phone" name="phone" autocomplete="tel" required data-i18n-placeholder="form.phone.placeholder" placeholder="+7 999 040-22-46">
-            <small class="error-msg" data-error-for="phone"></small>
-          </div>
-
-          <div class="form-group">
-            <label for="f-message" data-i18n="form.message.label">Сообщение</label>
-            <textarea id="f-message" name="message" rows="4" required data-i18n-placeholder="form.message.placeholder" placeholder="Кратко опишите ваш запрос"></textarea>
-            <small class="error-msg" data-error-for="message"></small>
-          </div>
-
-          <button type="submit" class="btn btn-accent" data-i18n="form.submit">Оставить заявку</button>
-
-          <p class="form-success" id="form-success" role="status" hidden data-i18n="form.success">Спасибо! Ваша заявка отправлена. Мы скоро свяжемся с вами.</p>
-        </form>
+          <p class="form-fallback form-fallback-under" data-i18n="form.fallback">Если форма не отображается, напишите нам на info@wood-biz.com или позвоните по телефону выше — мы ответим в течение 24 часов.</p>
+          <noscript>
+            <p class="form-fallback">Для отправки заявки включите JavaScript или напишите на info@wood-biz.com.</p>
+          </noscript>
+        </div>
       </div>
     </section>
   </main>
@@ -161,7 +169,7 @@
       <ul class="footer-contacts">
         <li><a href="mailto:info@wood-biz.com">info@wood-biz.com</a></li>
         <li><a href="tel:+79990402246">+7 999 040 22 46</a></li>
-        <li data-i18n="footer.tagline">Поставщики и покупатели лесоматериалов по всему миру</li>
+        <li data-i18n="footer.tagline">Поставщики и покупатели пиломатериалов и продукции из древесины по всему миру</li>
       </ul>
       <p class="footer-copy">&copy; <span id="year">2026</span> Wood-Biz. <span data-i18n="footer.rights">Все права защищены.</span></p>
     </div>
