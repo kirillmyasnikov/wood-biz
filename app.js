@@ -9,24 +9,23 @@
   "use strict";
 
   /* ---------------- Translations ----------------
-     Business-style translations for all four languages.
-     Key message: independent agents building trust between
-     suppliers and buyers of sawn timber and wood products
-     worldwide. Customs clearance is explicitly NOT included. */
+     Сайт-витрина: описываем род деятельности и географию,
+     без призывов к действию и без обещаний.
+     Customs clearance is explicitly NOT included. */
   const I18N = {
     ru: {
-      "meta.title": "Wood-Biz — Мост доверия между поставщиками и покупателями древесины",
+      "meta.title": "Wood-Biz — поставки пиломатериалов по России и на экспорт",
       "meta.description":
-        "Wood-Biz: независимые агенты между поставщиками и покупателями пиломатериалов и продукции из древесины по всему миру. Агентирование сделок, инспектирование качества, проверка документов, логистика (без таможенного оформления).",
-      "og.title": "Wood-Biz — Мост доверия между поставщиками и покупателями древесины",
+        "Wood-Biz: поставки пиломатериалов и продукции из древесины по России и на экспорт. Агентирование сделок, инспектирование качества, документальное сопровождение, логистика.",
+      "og.title": "Wood-Biz — поставки пиломатериалов по России и на экспорт",
       "og.description":
-        "Агентирование сделок, инспекция качества, проверка документов и логистика. Поставщики и покупатели пиломатериалов и продукции из древесины по всему миру.",
+        "Агентирование сделок, инспекция качества, документальное сопровождение и логистика. Поставки по России и на экспорт.",
 
       "hero.eyebrow": "Агентирование · Инспекция · Документация · Логистика",
-      "hero.title": "Wood-Biz — Мост доверия между поставщиками и покупателями древесины",
+      "hero.title": "Поставки пиломатериалов по России и на экспорт",
       "hero.subtitle":
-        "Мы выступаем независимыми агентами, создающими основу для доверительных отношений между поставщиками и покупателями пиломатериалов и продукции из древесины по всему миру.",
-      "cta.button": "Оставить заявку",
+        "Независимые агенты между поставщиками и покупателями пиломатериалов и продукции из древесины. Работаем по России и на экспорт.",
+      "cta.button": "Контакты",
 
       "services.title": "Наши услуги",
       "services.s1.title": "Агентирование сделок",
@@ -35,138 +34,123 @@
       "services.s2.desc": "Проверяем продукцию на соответствие заявленным стандартам.",
       "services.s3.title": "Документальное сопровождение",
       "services.s3.desc":
-        "Сопровождаем сделку документально: формируем требования к пакету документов, проверяем его комплектность и соответствие условиям контракта, снимаем разночтения между поставщиком и покупателем. Документы готовит поставщик; таможенное оформление не входит в услуги.",
+        "Сопровождаем сделку документально: формируем требования к пакету документов, проверяем комплектность и соответствие условиям контракта. Документы готовит поставщик; таможенное оформление не входит в услуги.",
       "services.s4.title": "Услуги по логистике",
-      "services.s4.desc":
-        "Организуем перевозку пиломатериалов от поставщика до покупателя: подбираем маршрут, контролируем сроки и сопровождаем груз в пути.",
+      "services.s4.desc": "Организуем перевозку по России и на экспорт: маршрут, перевозчик, сроки.",
 
-      "contact.title": "Оставить заявку",
-      "contact.subtitle": "Заполните форму — мы свяжемся с вами в течение 24 часов.",
-      "contact.phone_label": "Или позвоните нам:",
-      "form.fallback":
-        "Если форма не отображается, напишите нам на info@wood-biz.com или позвоните по телефону выше — мы ответим в течение 24 часов.",
-      "form.pending.title": "Оставьте заявку по почте",
+      "contact.title": "Контакты",
+      "contact.subtitle": "Телефон и электронная почта для связи.",
+      "contact.phone_label": "Телефон:",
+      "form.fallback": "Если форма не отображается, напишите на info@wood-biz.com.",
+      "form.pending.title": "Написать на info@wood-biz.com",
       "form.error.send":
-        "Не удалось отправить заявку. Пожалуйста, напишите нам на info@wood-biz.com или позвоните по телефону выше.",
+        "Не удалось отправить заявку. Пожалуйста, напишите нам на info@wood-biz.com.",
 
-      "footer.tagline": "Поставщики и покупатели пиломатериалов и продукции из древесины по всему миру",
+      "footer.tagline": "Поставки пиломатериалов и продукции из древесины по России и на экспорт",
       "footer.rights": "Все права защищены."
     },
 
     en: {
-      "meta.title": "Wood-Biz — A Bridge of Trust Between Timber Suppliers and Buyers",
+      "meta.title": "Wood-Biz — timber supplies across Russia and for export",
       "meta.description":
-        "Wood-Biz: independent agents between suppliers and buyers of sawn timber and wood products worldwide. Deal agency, quality inspection, document verification and logistics (customs clearance not included).",
-      "og.title": "Wood-Biz — A Bridge of Trust Between Timber Suppliers and Buyers",
+        "Wood-Biz: supplies of sawn timber and wood products across Russia and for export. Deal agency, quality inspection, documentation support and logistics.",
+      "og.title": "Wood-Biz — timber supplies across Russia and for export",
       "og.description":
-        "Deal agency, quality inspection, document verification and logistics. Connecting suppliers and buyers of sawn timber and wood products worldwide.",
+        "Deal agency, quality inspection, documentation support and logistics. Supplies across Russia and for export.",
 
       "hero.eyebrow": "Deal Agency · Inspection · Documentation · Logistics",
-      "hero.title": "Wood-Biz — A Bridge of Trust Between Timber Suppliers and Buyers",
+      "hero.title": "Timber supplies across Russia and for export",
       "hero.subtitle":
-        "We act as independent agents, creating the foundation for trusting relationships between suppliers and buyers of sawn timber and wood products around the world.",
-      "cta.button": "Submit Request",
+        "Independent agents between suppliers and buyers of sawn timber and wood products. We work across Russia and for export.",
+      "cta.button": "Contacts",
 
-      "services.title": "Our Services",
+      "services.title": "Services",
       "services.s1.title": "Deal Agency",
       "services.s1.desc": "We ensure transparency and security of interaction between the parties.",
       "services.s2.title": "Quality Inspection",
       "services.s2.desc": "We verify that products meet the declared standards.",
       "services.s3.title": "Documentation Support",
       "services.s3.desc":
-        "We provide documentary support for the deal: we define the requirements for the document package, verify its completeness and compliance with the contract terms, and resolve discrepancies between supplier and buyer. Documents are prepared by the supplier; customs clearance is not included.",
-      "services.s4.title": "Logistics Services",
-      "services.s4.desc":
-        "We arrange transport of sawn timber from supplier to buyer: route planning, schedule control and cargo support along the way.",
+        "We support the deal on the documentation side: we define the requirements for the document package and verify its completeness and compliance with the contract terms. Documents are prepared by the supplier; customs clearance is not included.",
+      "services.s4.title": "Logistics",
+      "services.s4.desc": "We arrange transport across Russia and for export: route, carrier, timelines.",
 
-      "contact.title": "Submit Request",
-      "contact.subtitle": "Fill in the form — we will contact you within 24 hours.",
-      "contact.phone_label": "Or call us:",
-      "form.fallback":
-        "If the form does not load, email us at info@wood-biz.com or call the number above — we reply within 24 hours.",
-      "form.pending.title": "Send your request by email",
-      "form.error.send":
-        "We could not send your request. Please email us at info@wood-biz.com or call the number above.",
+      "contact.title": "Contacts",
+      "contact.subtitle": "Phone and email for inquiries.",
+      "contact.phone_label": "Phone:",
+      "form.fallback": "If the form does not load, email us at info@wood-biz.com.",
+      "form.pending.title": "Email info@wood-biz.com",
+      "form.error.send": "We could not send your request. Please email us at info@wood-biz.com.",
 
-      "footer.tagline": "Connecting suppliers and buyers of sawn timber and wood products worldwide",
+      "footer.tagline": "Supplies of sawn timber and wood products across Russia and for export",
       "footer.rights": "All rights reserved."
     },
 
     ko: {
-      "meta.title": "Wood-Biz — 목재 공급업체와 구매자 사이의 신뢰의 다리",
+      "meta.title": "Wood-Biz — 러시아 전역 및 수출용 제재목 공급",
       "meta.description":
-        "Wood-Biz: 전 세계 제재목 및 목제품 공급업체와 구매자 사이의 독립 에이전시. 거래 에이전시, 품질 검사, 서류 확인, 물류 (통관 업무 제외).",
-      "og.title": "Wood-Biz — 목재 공급업체와 구매자 사이의 신뢰의 다리",
-      "og.description":
-        "거래 에이전시, 품질 검사, 서류 확인 및 물류. 전 세계 제재목 및 목제품 공급업체와 구매자를 연결합니다.",
+        "Wood-Biz: 러시아 전역 및 수출용 제재목·목제품 공급. 거래 에이전시, 품질 검사, 문서 지원, 물류.",
+      "og.title": "Wood-Biz — 러시아 전역 및 수출용 제재목 공급",
+      "og.description": "거래 에이전시, 품질 검사, 문서 지원 및 물류. 러시아 전역 및 수출 공급.",
 
       "hero.eyebrow": "거래 에이전시 · 품질 검사 · 문서 지원 · 물류",
-      "hero.title": "Wood-Biz — 목재 공급업체와 구매자 사이의 신뢰의 다리",
+      "hero.title": "러시아 전역 및 수출용 제재목 공급",
       "hero.subtitle":
-        "저희는 전 세계 제재목 및 목제품 공급업체와 구매자 간의 신뢰 관계 구축을 지원하는 독립 에이전시입니다.",
-      "cta.button": "문의하기",
+        "제재목 및 목제품 공급업체와 구매자 사이의 독립 에이전시입니다. 러시아 전역과 수출 시장에서 활동합니다.",
+      "cta.button": "연락처",
 
-      "services.title": "서비스 소개",
+      "services.title": "서비스",
       "services.s1.title": "거래 에이전시",
       "services.s1.desc": "당사자 간 거래의 투명성과 안전성을 보장합니다.",
       "services.s2.title": "품질 검사",
       "services.s2.desc": "제품이 명시된 기준에 부합하는지 검증합니다.",
       "services.s3.title": "문서 지원",
       "services.s3.desc":
-        "거래의 서류 업무를 지원합니다. 문서 패키지 요건을 정하고, 구성의 완전성과 계약 조건 부합 여부를 확인하며, 공급업체와 구매자 간의 이견을 조율합니다. 서류는 공급업체가 준비하며, 통관 업무는 포함되지 않습니다.",
-      "services.s4.title": "물류 서비스",
-      "services.s4.desc":
-        "공급업체에서 구매자까지 제재목 운송을 조직합니다. 경로 선정, 일정 관리, 운송 중 화물 동행을 지원합니다.",
+        "거래의 서류 업무를 지원합니다. 문서 패키지 요건을 정하고, 구성의 완전성과 계약 조건 부합 여부를 확인합니다. 서류는 공급업체가 준비하며, 통관 업무는 포함되지 않습니다.",
+      "services.s4.title": "물류",
+      "services.s4.desc": "러시아 전역 및 수출 운송을 조직합니다. 경로, 운송사, 일정을 관리합니다.",
 
-      "contact.title": "문의하기",
-      "contact.subtitle": "양식을 작성해 주시면 24시간 이내에 연락드리겠습니다.",
-      "contact.phone_label": "전화 문의:",
-      "form.fallback":
-        "양식이 표시되지 않으면 info@wood-biz.com 으로 이메일을 보내시거나 위 번호로 전화해 주세요. 24시간 이내에 답변드립니다.",
-      "form.pending.title": "이메일로 문의하기",
-      "form.error.send":
-        "문의를 전송하지 못했습니다. info@wood-biz.com 으로 이메일을 보내시거나 위 번호로 전화해 주세요.",
+      "contact.title": "연락처",
+      "contact.subtitle": "전화와 이메일로 문의하실 수 있습니다.",
+      "contact.phone_label": "전화:",
+      "form.fallback": "양식이 표시되지 않으면 info@wood-biz.com 으로 이메일을 보내 주세요.",
+      "form.pending.title": "info@wood-biz.com 으로 이메일 보내기",
+      "form.error.send": "문의를 전송하지 못했습니다. info@wood-biz.com 으로 이메일을 보내 주세요.",
 
-      "footer.tagline": "전 세계 제재목 및 목제품 공급업체와 구매자를 연결합니다",
+      "footer.tagline": "러시아 전역 및 수출용 제재목·목제품 공급",
       "footer.rights": "모든 권리 보유."
     },
 
     zh: {
-      "meta.title": "Wood-Biz — 木材供应商与采购商之间的信任之桥",
+      "meta.title": "Wood-Biz — 俄罗斯全境及出口木材供应",
       "meta.description":
-        "Wood-Biz：独立代理，连接全球锯材及木制品供应商与采购商。交易代理、质量检验、文件核查与物流（不含海关报关）。",
-      "og.title": "Wood-Biz — 木材供应商与采购商之间的信任之桥",
-      "og.description":
-        "交易代理、质量检验、文件核查与物流。连接全球锯材及木制品供应商与采购商。",
+        "Wood-Biz：俄罗斯全境及出口锯材与木制品供应。交易代理、质量检验、文件支持、物流。",
+      "og.title": "Wood-Biz — 俄罗斯全境及出口木材供应",
+      "og.description": "交易代理、质量检验、文件支持与物流。供应覆盖俄罗斯全境及出口市场。",
 
       "hero.eyebrow": "交易代理 · 质量检验 · 文件支持 · 物流",
-      "hero.title": "Wood-Biz — 木材供应商与采购商之间的信任之桥",
-      "hero.subtitle":
-        "我们作为独立代理，为全球锯材及木制品供应商与采购商建立互信合作的基础。",
-      "cta.button": "提交申请",
+      "hero.title": "俄罗斯全境及出口木材供应",
+      "hero.subtitle": "锯材及木制品供应商与采购商之间的独立代理。业务覆盖俄罗斯全境及出口市场。",
+      "cta.button": "联系方式",
 
-      "services.title": "我们的服务",
+      "services.title": "服务",
       "services.s1.title": "交易代理",
       "services.s1.desc": "确保各方合作的透明度与安全性。",
       "services.s2.title": "质量检验",
       "services.s2.desc": "核验产品是否符合申报标准。",
       "services.s3.title": "文件支持",
-      "services.s3.desc":
-        "为交易提供文件支持：制定文件包要求，核查其完整性与是否符合合同条款，并协调供应商与采购商之间的分歧。文件由供应商准备，不含海关报关。",
-      "services.s4.title": "物流服务",
-      "services.s4.desc":
-        "组织从供应商到采购商的锯材运输：规划路线、管控时效并全程跟单。",
+      "services.s3.desc": "为交易提供文件支持：制定文件包要求，核查其完整性与是否符合合同条款。文件由供应商准备，不含海关报关。",
+      "services.s4.title": "物流",
+      "services.s4.desc": "组织俄罗斯全境及出口运输：路线、承运方、时效。",
 
-      "contact.title": "提交申请",
-      "contact.subtitle": "请填写表格 — 我们将在24小时内与您联系。",
-      "contact.phone_label": "或直接致电：",
-      "form.fallback":
-        "如果表单无法显示，请发送邮件至 info@wood-biz.com 或拨打上方电话，我们将在24小时内回复。",
-      "form.pending.title": "通过邮件提交申请",
-      "form.error.send":
-        "申请发送失败。请发送邮件至 info@wood-biz.com 或拨打上方电话。",
+      "contact.title": "联系方式",
+      "contact.subtitle": "可通过电话或电子邮件联系。",
+      "contact.phone_label": "电话：",
+      "form.fallback": "如果表单无法显示，请发送邮件至 info@wood-biz.com。",
+      "form.pending.title": "发送邮件至 info@wood-biz.com",
+      "form.error.send": "申请发送失败。请发送邮件至 info@wood-biz.com。",
 
-      "footer.tagline": "连接全球锯材及木制品供应商与采购商",
+      "footer.tagline": "俄罗斯全境及出口锯材与木制品供应",
       "footer.rights": "版权所有。"
     }
   };
@@ -207,8 +191,6 @@
       el.setAttribute("content", t(el.getAttribute("data-i18n-og")));
     });
 
-    // Iframe title / form status texts are rendered by Zoho; nothing to do here.
-
     // Buttons state
     document.querySelectorAll(".lang-btn").forEach(function (btn) {
       const active = btn.getAttribute("data-lang") === lang;
@@ -240,12 +222,37 @@
     applyLanguage(lang);
   }
 
-  /* ---------------- Form handling ----------------
-     Форма заявки на странице — это iframe Zoho Forms (см. index.html),
-     поэтому отправку, валидацию и уведомление на kirill@wood-biz.com
-     выполняет Zoho. Ниже — безопасная заглушка на случай, если форму
-     когда-нибудь вернут в виде нативного <form>: она НЕ показывает
-     ложное «отправлено», а просит написать на email. */
+  /* ---------------- Zoho Forms iframe ----------------
+     Если data-src пуст, iframe не загружается, а вместо него показывается
+     блок с email. Так посетитель никогда не видит «битую» форму. */
+  function initFormEmbed() {
+    const frame = document.getElementById("zoho-form");
+    if (!frame) return;
+
+    const pending = document.getElementById("form-pending");
+    const under = document.querySelector(".form-fallback-under");
+
+    function showPending() {
+      frame.remove();
+      if (pending) pending.hidden = false;
+      if (under) under.hidden = true;
+    }
+
+    const src = (frame.getAttribute("data-src") || "").trim();
+
+    if (!src || src.indexOf("PASTE_ZOHO_FORM_URL") !== -1) {
+      showPending();
+      return;
+    }
+
+    frame.addEventListener("error", showPending);
+    frame.src = src;
+  }
+
+  /* ---------------- Native form fallback ----------------
+     На странице используется iframe Zoho, поэтому этот блок не активен.
+     Он нужен только если форму когда-нибудь вернут как <form>: тогда
+     ложного «отправлено» не будет. */
   function initForm() {
     const form = document.getElementById("request-form");
     if (!form) return;
@@ -284,34 +291,6 @@
           }
         });
     });
-  }
-
-  /* ---------------- Zoho Forms iframe ----------------
-     Пока в index.html стоит заглушка PASTE_ZOHO_FORM_URL, iframe скрывается,
-     а вместо него показывается блок с email и телефоном. Так посетитель
-     никогда не видит «битую» форму и не получает ложное подтверждение. */
-  function initFormEmbed() {
-    const frame = document.getElementById("zoho-form");
-    if (!frame) return;
-
-    const pending = document.getElementById("form-pending");
-    const under = document.querySelector(".form-fallback-under");
-
-    function showPending() {
-      frame.remove();
-      if (pending) pending.hidden = false;
-      if (under) under.hidden = true;
-    }
-
-    const src = (frame.getAttribute("data-src") || "").trim();
-
-    if (!src || src.indexOf("PASTE_ZOHO_FORM_URL") !== -1) {
-      showPending();
-      return;
-    }
-
-    frame.addEventListener("error", showPending);
-    frame.src = src;
   }
 
   /* ---------------- Footer year ---------------- */
