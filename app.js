@@ -303,7 +303,7 @@
       if (under) under.hidden = true;
     }
 
-    const src = (frame.getAttribute("src") || "").trim();
+    const src = (frame.getAttribute("data-src") || "").trim();
 
     if (!src || src.indexOf("PASTE_ZOHO_FORM_URL") !== -1) {
       showPending();
@@ -311,6 +311,7 @@
     }
 
     frame.addEventListener("error", showPending);
+    frame.src = src;
   }
 
   /* ---------------- Footer year ---------------- */

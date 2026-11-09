@@ -136,14 +136,15 @@
               Forms → выберите форму → Share → Embed → iFrame Source Code
             Ссылка выглядит так:
               https://forms.zohopublic.eu/<account>/form/<FormName>/formperma/<token>
-            Пока src содержит PASTE_ZOHO_FORM_URL, iframe скрыт, а посетитель
-            видит кнопку «написать на email» — ложного «отправлено» нет.
+            Пока data-src содержит PASTE_ZOHO_FORM_URL, iframe не загружается,
+            а посетитель видит кнопку «написать на email» — ложного
+            «отправлено» нет.
           -->
           <iframe
             id="zoho-form"
             class="zoho-form-frame"
             title="Форма заявки Wood-Biz"
-            src="PASTE_ZOHO_FORM_URL"
+            data-src="PASTE_ZOHO_FORM_URL"
             loading="lazy"
             referrerpolicy="strict-origin-when-cross-origin"></iframe>
 
