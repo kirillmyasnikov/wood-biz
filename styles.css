@@ -203,6 +203,13 @@ a { color: var(--color-accent); }
 .service-card h3 { font-size: 1.02rem; margin-bottom: 8px; }
 .service-card p { font-size: .9rem; color: var(--color-muted); margin: 0; }
 
+.services-note {
+  margin: 28px 0 0;
+  text-align: center;
+  font-size: .85rem;
+  color: var(--color-muted);
+}
+
 /* ---------- Contact / CTA ---------- */
 .contact {
   padding: 90px 0;
