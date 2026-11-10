@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wood-Biz | Международная торговая компания</title>
+    <meta name="description" content="Поставки хвойных пиломатериалов из России на рынки Азиатско-Тихоокеанского региона. Экспорт, логистика, контроль качества.">
+    <style>
+        :root {
+            --primary: #1a365d; /* Темно-синий, деловой */
+            --accent: #2d5a27; /* Лесной зеленый для акцентов */
+            --bg: #f8f9fa;
+            --text: #333333;
+            --text-light: #666666;
+            --white: #ffffff;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background-color: var(--bg);
+        }
+        .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+        
+        /* Header */
+        header {
+            background: var(--white);
+            border-bottom: 1px solid #e2e8f0;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo { font-size: 1.5rem; font-weight: 700; color: var(--primary); letter-spacing: -0.5px; }
+        .lang-switcher { display: flex; gap: 10px; }
+        .lang-btn {
+            background: none;
+            border: 1px solid #cbd5e1;
+            padding: 5px 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.85rem;
+            color: var(--text-light);
+            transition: all 0.2s;
+        }
+        .lang-btn:hover, .lang-btn.active {
+            background: var(--primary);
+            color: var(--white);
+            border-color: var(--primary);
+        }
+
+        /* Hero */
+        .hero {
+            padding: 80px 0 60px;
+            text-align: center;
+            background: linear-gradient(to bottom, #ffffff, #f1f5f9);
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--text-light);
+            max-width: 700px;
+            margin: 0 auto 30px;
+        }
+
+        /* Services */
+        .services { padding: 60px 0; }
+        .section-title {
+            text-align: center;
+            font-size: 1.8rem;
+            color: var(--primary);
+            margin-bottom: 40px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+        .card {
+            background: var(--white);
+            padding: 30px;
+            border-radius: 8px;
+            border: 1px solid #e2e8f0;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+            border-color: var(--accent);
+        }
+        .card h3 {
+            color: var(--primary);
+            margin-bottom: 15px;
+            font-size: 1.15rem;
+        }
+        .card p { font-size: 0.95rem; color: var(--text-light); }
+
+        /* For Suppliers */
+        .suppliers {
+            background: var(--primary);
+            color: var(--white);
+            padding: 60px 0;
+            text-align: center;
+        }
+        .suppliers h2 { margin-bottom: 20px; font-size: 1.8rem; }
+        .suppliers p {
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 1.1rem;
+            opacity: 0.9;
+            line-height: 1.7;
+        }
+
+        /* Contacts & CTA */
+        .contacts { padding: 60px 0 80px; text-align: center; }
+        .contact-info {
+            margin-bottom: 30px;
+            font-size: 1.1rem;
+        }
+        .contact-info p { margin: 8px 0; }
+        .contact-info a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .contact-info a:hover { text-decoration: underline; }
+        
+        .cta-button {
+            display: inline-block;
+            background: var(--accent);
+            color: var(--white);
+            padding: 15px 40px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: background 0.2s;
+            margin-top: 10px;
+        }
+        .cta-button:hover { background: #1e401a; }
+
+        /* Footer */
+        footer {
+            background: #0f172a;
+            color: #94a3b8;
+            padding: 30px 0;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 1.8rem; }
+            .hero p { font-size: 1rem; }
+            .grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container header-inner">
+        <div class="logo">Wood-Biz</div>
+        <div class="lang-switcher">
+            <button class="lang-btn active" onclick="setLang('ru')">RU</button>
+            <button class="lang-btn" onclick="setLang('en')">EN</button>
+            <button class="lang-btn" onclick="setLang('ko')">KO</button>
+            <button class="lang-btn" onclick="setLang('zh')">中文</button>
+        </div>
+    </div>
+</header>
+
+<main>
+    <section class="hero">
+        <div class="container">
+            <h1 data-i18n="hero_title">Wood-Biz — Международная торговая компания</h1>
+            <p data-i18n="hero_subtitle">Поставки хвойных пиломатериалов из России на рынки Азиатско-Тихоокеанского региона (Южная Корея, Китай).</p>
+        </div>
+    </section>
+
+    <section class="services">
+        <div class="container">
+            <h2 class="section-title" data-i18n="services_title">Наши направления деятельности</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3 data-i18n="card1_title">Прямые закупки и дистрибьюция</h3>
+                    <p data-i18n="card1_text">Заключаем долгосрочные контракты с лесопильными комплексами. Обеспечиваем гарантированный выкуп объемов пиления и стабильный сбыт на целевых рынках Азии.</p>
+                </div>
+                <div class="card">
+                    <h3 data-i18n="card2_title">Контроль качества (Quality Control)</h3>
+                    <p data-i18n="card2_text">Инспектирование партий на ключевых логистических узлах силами собственных штатных специалистов. Строгая приемка по экспортному стандарту ГОСТ 26002-83.</p>
+                </div>
+                <div class="card">
+                    <h3 data-i18n="card3_title">Экспортное администрирование</h3>
+                    <p data-i18n="card3_text">Полное сопровождение сделок: от прохождения фитосанитарного контроля до таможенного оформления и подготовки международной документации под требования банков-эмитентов.</p>
+                </div>
+                <div class="card">
+                    <h3 data-i18n="card4_title">Мультимодальная логистика</h3>
+                    <p data-i18n="card4_text">Организация и управление цепочками поставок. Контейнерные поезда и морской фрахт до крупнейших портов Азии (Пусан, Инчхон, Шанхай) напрямую с заводов-производителей.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="suppliers">
+        <div class="container">
+            <h2 data-i18n="suppliers_title">Сотрудничество с производителями</h2>
+            <p data-i18n="suppliers_text">Компания Wood-Biz заинтересована в долгосрочном партнерстве с лесопильными предприятиями РФ (с объемом производства от 20 000 м³/год). Принимаем коммерческие предложения на распиловку ели и сосны под экспортные спецификации. Гарантируем своевременную оплату, четкое соблюдение графиков и ритмичный вывоз готовой продукции.</p>
+        </div>
+    </section>
+
+    <section class="contacts">
+        <div class="container">
+            <h2 class="section-title" data-i18n="contacts_title">Контакты</h2>
+            <div class="contact-info">
+                <p><strong>Wood-Biz</strong> | <span data-i18n="footer_desc">Экспорт пиломатериалов</span></p>
+                <p>Email: <a href="mailto:info@wood-biz.com">info@wood-biz.com</a></p>
+                <p data-i18n="phone_label">Телефон / Мессенджеры:</p>
+                <p><a href="tel:+79990402246">+7 999 040 22 46</a> (WhatsApp, Telegram)</p>
+                <p data-i18n="office_label">Головной офис:</p>
+                <p data-i18n="office_vl">г. Владивосток, Россия (GMT +10)</p>
+                <p data-i18n="rep_label">Представительства:</p>
+                <p data-i18n="rep_seoul">Южная Корея (Сеул)</p>
+            </div>
+            <!-- Чистая mailto ссылка вместо сложных JS форм. Это максимально надежно для спам-фильтров и почтовых роботов -->
+            <a href="mailto:info@wood-biz.com?subject=Коммерческое предложение для Wood-Biz" class="cta-button" data-i18n="cta_button">Отправить коммерческое предложение</a>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2026 Wood-Biz. <span data-i18n="footer_rights">Все права защищены.</span></p>
+    </div>
+</footer>
+
+<script>
+    // Словарь переводов. Гарантирует отсутствие ошибок 404 и мгновенную загрузку.
+    const translations = {
+        ru: {
+            hero_title: "Wood-Biz — Международная торговая компания",
+            hero_subtitle: "Поставки хвойных пиломатериалов из России на рынки Азиатско-Тихоокеанского региона (Южная Корея, Китай).",
+            services_title: "Наши направления деятельности",
+            card1_title: "Прямые закупки и дистрибьюция",
+            card1_text: "Заключаем долгосрочные контракты с лесопильными комплексами. Обеспечиваем гарантированный выкуп объемов пиления и стабильный сбыт на целевых рынках Азии.",
+            card2_title: "Контроль качества (Quality Control)",
+            card2_text: "Инспектирование партий на ключевых логистических узлах силами собственных штатных специалистов. Строгая приемка по экспортному стандарту ГОСТ 26002-83.",
+            card3_title: "Экспортное администрирование",
+            card3_text: "Полное сопровождение сделок: от прохождения фитосанитарного контроля до таможенного оформления и подготовки международной документации под требования банков-эмитентов.",
+            card4_title: "Мультимодальная логистика",
+            card4_text: "Организация и управление цепочками поставок. Контейнерные поезда и морской фрахт до крупнейших портов Азии (Пусан, Инчхон, Шанхай) напрямую с заводов-производителей.",
+            suppliers_title: "Сотрудничество с производителями",
+            suppliers_text: "Компания Wood-Biz заинтересована в долгосрочном партнерстве с лесопильными предприятиями РФ (с объемом производства от 20 000 м³/год). Принимаем коммерческие предложения на распиловку ели и сосны под экспортные спецификации. Гарантируем своевременную оплату, четкое соблюдение графиков и ритмичный вывоз готовой продукции.",
+            contacts_title: "Контакты",
+            footer_desc: "Экспорт пиломатериалов",
+            phone_label: "Телефон / Мессенджеры:",
+            office_label: "Головной офис:",
+            office_vl: "г. Владивосток, Россия (GMT +10)",
+            rep_label: "Представительства:",
+            rep_seoul: "Южная Корея (Сеул)",
+            cta_button: "Отправить коммерческое предложение",
+            footer_rights: "Все права защищены."
+        },
+        en: {
+            hero_title: "Wood-Biz — International Trading Company",
+            hero_subtitle: "Supply of softwood lumber from Russia to the Asia-Pacific markets (South Korea, China).",
+            services_title: "Our Areas of Activity",
+            card1_title: "Direct Procurement & Distribution",
+            card1_text: "We conclude long-term contracts with sawmills. We ensure guaranteed purchase of sawing volumes and stable sales in target Asian markets.",
+            card2_title: "Quality Control",
+            card2_text: "Inspection of batches at key logistics hubs by our own in-house specialists. Strict acceptance according to the export standard GOST 26002-83.",
+            card3_title: "Export Administration",
+            card3_text: "Full transaction support: from phytosanitary control to customs clearance and preparation of international documentation for issuing banks.",
+            card4_title: "Multimodal Logistics",
+            card4_text: "Organization and management of supply chains. Container trains and sea freight to major Asian ports (Busan, Incheon, Shanghai) directly from manufacturing plants.",
+            suppliers_title: "Cooperation with Manufacturers",
+            suppliers_text: "Wood-Biz is interested in long-term partnerships with Russian sawmills (production volume from 20,000 m³/year). We accept commercial offers for spruce and pine sawing according to export specifications. We guarantee timely payment, strict adherence to schedules, and rhythmic removal of finished products.",
+            contacts_title: "Contacts",
+            footer_desc: "Lumber Export",
+            phone_label: "Phone / Messengers:",
+            office_label: "Head Office:",
+            office_vl: "Vladivostok, Russia (GMT +10)",
+            rep_label: "Representative Offices:",
+            rep_seoul: "South Korea (Seoul)",
+            cta_button: "Send Commercial Proposal",
+            footer_rights: "All rights reserved."
+        },
+        ko: {
+            hero_title: "Wood-Biz — 국제 무역 회사",
+            hero_subtitle: "러시아산 연목 제재목을 아시아 태평양 지역(대한민국, 중국) 시장에 공급합니다.",
+            services_title: "주요 사업 분야",
+            card1_title: "직접 조달 및 유통",
+            card1_text: "제재소와 장기 계약을 체결합니다. 톱질 물량의 보장된 매입과 아시아 목표 시장에서의 안정적인 판로를 보장합니다.",
+            card2_title: "품질 관리 (Quality Control)",
+            card2_text: "자체 전문 인력이 주요 물류 거점에서 화물을 검사합니다. 수출 표준 GOST 26002-83에 따른 엄격한 검수를 수행합니다.",
+            card3_title: "수출 행정",
+            card3_text: "식물 검역 통과부터 통관 및 개설 은행의 요구 사항에 따른 국제 서류 준비까지 거래의 완벽한 지원을 제공합니다.",
+            card4_title: "복합 운송 물류",
+            card4_text: "공급망의 조직 및 관리. 생산 공장부터 아시아 주요 항구(부산, 인천, 상하이)까지 컨테이너 열차 및 해상 화물 운송을 직접 연결합니다.",
+            suppliers_title: "제조업체와의 협력",
+            suppliers_text: "Wood-Biz는 연간 생산량 20,000m³ 이상의 러시아 제재소와 장기적인 파트너십을 구축하고자 합니다. 수출 사양에 따른 가문비나무 및 소나무 제재에 대한 상업적 제안을 받습니다. 적시 지불, 일정 엄수 및 완제품의 규칙적인 반출을 보장합니다.",
+            contacts_title: "연락처",
+            footer_desc: "제재목 수출",
+            phone_label: "전화 / 메신저:",
+            office_label: "본사:",
+            office_vl: "러시아, 블라디보스토크 (GMT +10)",
+            rep_label: "지사:",
+            rep_seoul: "대한민국 (서울)",
+            cta_button: "상업적 제안서 보내기",
+            footer_rights: "모든 권리 보유."
+        },
+        zh: {
+            hero_title: "Wood-Biz — 国际贸易公司",
+            hero_subtitle: "将俄罗斯软木锯材供应至亚太市场（韩国、中国）。",
+            services_title: "我们的业务领域",
+            card1_title: "直接采购与分销",
+            card1_text: "我们与锯木厂签订长期合同。确保锯切量的保证采购，并在目标亚洲市场实现稳定销售。",
+            card2_title: "质量控制 (Quality Control)",
+            card2_text: "由我们自己的内部专家在关键物流枢纽对批次进行检查。严格按照出口标准 GOST 26002-83 进行验收。",
+            card3_title: "出口管理",
+            card3_text: "提供全面的交易支持：从植物检疫到清关，以及准备符合开证行要求的国际文件。",
+            card4_title: "多式联运物流",
+            card4_text: "组织和管理供应链。从制造工厂直接通过集装箱列车和海运货运至亚洲主要港口（釜山、仁川、上海）。",
+            suppliers_title: "与制造商合作",
+            suppliers_text: "Wood-Biz 希望与俄罗斯锯木厂（年产量 20,000 立方米以上）建立长期合作伙伴关系。我们接受根据出口规格加工云杉和松树的商业报价。我们保证及时付款、严格遵守时间表并定期运出成品。",
+            contacts_title: "联系方式",
+            footer_desc: "锯材出口",
+            phone_label: "电话 / 即时通讯:",
+            office_label: "总部:",
+            office_vl: "俄罗斯，符拉迪沃斯托克 (GMT +10)",
+            rep_label: "代表处:",
+            rep_seoul: "韩国（首尔）",
+            cta_button: "发送商业提案",
+            footer_rights: "版权所有。"
+        }
+    };
+
+    function setLang(lang) {
+        // Обновляем текст
+        const elements = document.querySelectorAll('[data-i18n]');
+        elements.forEach(el => {
+            const key = el.getAttribute('data-i18n');
+            if (translations[lang][key]) {
+                el.textContent = translations[lang][key];
+            }
+        });
+
+        // Обновляем активную кнопку
+        document.querySelectorAll('.lang-btn').forEach(btn => {
+            btn.classList.remove('active');
+        });
+        event.target.classList.add('active');
+
+        // Меняем атрибут lang у html для доступности и SEO
+        document.documentElement.lang = lang;
+    }
+</script>
+
+</body>
+</html>
